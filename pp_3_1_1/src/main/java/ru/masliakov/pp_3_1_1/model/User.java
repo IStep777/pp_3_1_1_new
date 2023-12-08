@@ -11,16 +11,13 @@ public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
     private int id;
 
-    @Column(name = "name")
+
     private String name;
 
-    @Column(name = "surname")
     private String surname;
 
-    @Column(name = "email")
     private String email;
 
     public User() {
